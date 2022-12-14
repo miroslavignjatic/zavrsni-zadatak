@@ -16,19 +16,24 @@
 
     <!-- Custom styles for this template -->
     <link href="styles/blog.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" >
+
 </head>
 
 <body>
+<?php
+include('header.php');
+?>
 
-<header>
+<!-- <header>
     <div class="blog-masthead">
         <div class="container">
             <nav class="nav">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">New features</a>
-                <a class="nav-link" href="#">Press</a>
-                <a class="nav-link" href="#">New hires</a>
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link active" href="home.html">Home</a>
+                <a class="nav-link" href="newFeatures.html">New features</a>
+                <a class="nav-link" href="press.html">Press</a>
+                <a class="nav-link" href="newHires.html">New hires</a>
+                <a class="nav-link" href="about.html">About</a>
             </nav>
         </div>
     </div>
@@ -39,7 +44,7 @@
             <p class="lead blog-description">An example blog template built with Bootstrap.</p>
         </div>
     </div>
-</header>
+</header> -->
 
 <main role="main" class="container">
 
@@ -48,7 +53,7 @@
         <div class="col-sm-8 blog-main">
 
             <div class="blog-post">
-                <h2 class="blog-post-title">Sample blog post</h2>
+                <h2 class="blog-post-title"><a href = "sampleBlog.html"> Sample blog post</a></h2>
                 <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
                 <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
@@ -81,7 +86,7 @@
             </div><!-- /.blog-post -->
 
             <div class="blog-post">
-                <h2 class="blog-post-title">Another blog post</h2>
+                <h2 class="blog-post-title"> <a href = "anotherBlog.html">Another blog post</a></h2>
                 <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
 
                 <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -93,7 +98,7 @@
             </div><!-- /.blog-post -->
 
             <div class="blog-post">
-                <h2 class="blog-post-title">New feature</h2>
+                <h2 class="blog-post-title"><a href = "newFeature.html">New feature</a></h2>
                 <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
 
                 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -113,7 +118,10 @@
 
         </div><!-- /.blog-main -->
 
-        <aside class="col-sm-3 ml-sm-auto blog-sidebar">
+        <?php
+    include ('sidebar.php')
+        ?>
+        <!-- <aside class="col-sm-3 ml-sm-auto blog-sidebar">
             <div class="sidebar-module sidebar-module-inset">
                 <h4>About</h4>
                 <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -143,17 +151,21 @@
                     <li><a href="#">Facebook</a></li>
                 </ol>
             </div>
-        </aside><!-- /.blog-sidebar -->
+        </aside>/.blog-sidebar -->
 
     </div><!-- /.row -->
 
 </main><!-- /.container -->
+<?php
+include ('footer.php');
+?>
 
-<footer class="blog-footer">
+
+<!-- <footer class="blog-footer">
     <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
     <p>
         <a href="#">Back to top</a>
     </p>
-</footer>
+</footer> -->
 </body>
 </html>
